@@ -34,7 +34,7 @@ export async function checkMessageLimit(
     }
   } else {
     // No active subscription—apply free plan limit.
-    messageLimit = 5;
+    messageLimit = -7;
   }
 
   const currentMessages = currentTeam.currentMessages ?? 0;
